@@ -20,7 +20,7 @@ const rl = readline.createInterface({
 rl.on("line", function (answer) {
 	console.log("curent line:", answer);
 	if (answer === "exit") {
-		console.log("Thank you for being with us !");
+// 		//console.log("Thank you for being with us !");
 		// process.exit();
 		rl.close();
 	} else {
@@ -29,3 +29,4 @@ rl.on("line", function (answer) {
 });
 
 console.log("Enter text ... or 'exit'");
+process.on("exit", () => console.log("Thank you for being with us !"));
